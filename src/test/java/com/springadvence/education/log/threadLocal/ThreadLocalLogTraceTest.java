@@ -1,13 +1,13 @@
 package com.springadvence.education.log.threadLocal;
 
-import com.springadvence.education.config.log.ThreadLocalLogProvider;
+import com.springadvence.education.config.log.LogTrace;
 import com.springadvence.education.config.log.TraceStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
 public class ThreadLocalLogTraceTest {
-    ThreadLocalLogProvider trace = new ThreadLocalLogProvider();
+    LogTrace trace = new LogTrace();
 
     @Test
     void begin_end_level2(){
