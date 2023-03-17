@@ -1,4 +1,4 @@
-package com.springadvence.education.api.v2;
+package com.springadvence.education.api.v3;
 
 import com.springadvence.education.config.log.LogTrace;
 import com.springadvence.education.config.log.template.AbstractTemplate;
@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class MemberServiceV2 {
+public class MemberServiceV3 {
 
-    private final MemberRepositoryV2 memberRepository;
+    private final MemberRepositoryV3 memberRepository;
 
     private final LogTrace trace;
     public void save(String userId) {

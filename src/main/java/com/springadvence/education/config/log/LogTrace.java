@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class ThreadLocalLogProvider implements LogProvider{
+public class LogTrace implements LogProvider{
 
     private static final String START_PREFIX = "ㅡ>";
     private static final String COMPLETE_PREFIX = "<--";

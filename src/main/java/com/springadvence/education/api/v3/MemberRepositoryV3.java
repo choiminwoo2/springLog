@@ -1,4 +1,4 @@
-package com.springadvence.education.api.v2;
+package com.springadvence.education.api.v3;
 
 import com.springadvence.education.config.log.LogTrace;
 import com.springadvence.education.config.log.template.AbstractTemplate;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 @RequiredArgsConstructor
 @Slf4j
-public class MemberRepositoryV2 {
+public class MemberRepositoryV3 {
 
     private final LogTrace trace;
 
