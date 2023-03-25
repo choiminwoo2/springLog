@@ -28,9 +28,9 @@ public class DecoreatePatternClientTest {
     @Test
     void decoratorV2(){
         RealComponent realComponent = new RealComponent();
-        TimeDecorator timeDecorator = new TimeDecorator(realComponent);
-        MessageDecorator messageDecorator = new MessageDecorator(timeDecorator);
-        DecoreatePatternClient decoreatePatternClient = new DecoreatePatternClient(messageDecorator);
+        MessageDecorator messageDecorator = new MessageDecorator(realComponent);
+        TimeDecorator timeDecorator = new TimeDecorator(messageDecorator);
+        DecoreatePatternClient decoreatePatternClient = new DecoreatePatternClient(timeDecorator);
         decoreatePatternClient.execute();
     }
 }

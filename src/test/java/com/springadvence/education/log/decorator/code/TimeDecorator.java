@@ -11,10 +11,10 @@ public class TimeDecorator implements Component{
     @Override
     public String operation() {
        Long startTimeMs = System.currentTimeMillis();
-
+       String operation = component.operation();
        sleep(1000);
        Long endTimeMs = System.currentTimeMillis();
-       String operation = component.operation();
+
        String result = operation + " TimeMs = " + (endTimeMs - startTimeMs);
 
        return result;
